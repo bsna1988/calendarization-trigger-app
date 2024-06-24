@@ -1,0 +1,14 @@
+modules:
+  webtrigger:
+    - key: calendarization-trigger-app-webtrigger-async
+      function: async
+  function:
+    - key: async
+      handler: index.run
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/ecbe0b25-673d-4904-a4ed-56f4d722521e
+permissions:
+  scopes:
+    - read:sprint:jira-software
