@@ -12,3 +12,9 @@ app:
 permissions:
   scopes:
     - read:sprint:jira-software
+    - read:issue:jira-software
+    - write:issue:jira-software
+    - read:issue-details:jira
+    - read:jql:jira
+    - read:jira-user
+    - write:jira-work
