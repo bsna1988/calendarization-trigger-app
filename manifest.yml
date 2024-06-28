@@ -17,4 +17,5 @@ permissions:
     - read:issue-details:jira
     - read:jql:jira
     - read:jira-user
+    - read:jira-work
     - write:jira-work
