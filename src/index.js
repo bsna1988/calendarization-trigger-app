@@ -1,6 +1,6 @@
 // Necessary import for calling Jira REST APIs
 import api, { route } from "@forge/api";
-import { TeamMember, Task } from "./domain";
+import { TeamMember, Task, TaskSet, Team } from "./domain";
 
 const buildOutput = () => ({
   headers: {
@@ -93,10 +93,13 @@ export const run = async (req) => {
   const issues = await Promise.all(issuesResponse.issues
     .map(async (issue) => await getIssue(issue.key)));
 
-  console.log(issues);
+  //console.log(issues);
 
   const tasks = issues.map(issue =>  new Task(issue.key, issue.fields.customfield_10016));
-  console.log(tasks);
+  //console.log(tasks);
+  const taskSet = new TaskSet();
+  tasks.forEach(task => taskSet.addTask(task));
+  console.log(taskSet);
 
   const usersResponsePromise = await api.asApp().requestJira(route`/rest/api/2/users/search`);
   const allUsers = await usersResponsePromise.json();
@@ -105,8 +108,9 @@ export const run = async (req) => {
     .map(async (user) => await getUser(user.accountId)));
 
   const teamMembers = activeUsers.map(user => new TeamMember(user.accountId, user.timeZone));
-
   //console.log(teamMembers);
+  const team = new Team(teamMembers);
+  console.log(team);
 
   issuesResponse.issues.forEach(issue => {
     assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);

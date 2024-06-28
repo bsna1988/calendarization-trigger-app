@@ -39,3 +39,23 @@ export class Task {
         this.estimatedHours = estimatedHours;
     }
 }
+
+export class Team {
+    constructor(teamMembers) {
+        this.teamMembers = teamMembers;
+    }
+}
+
+export class TaskSet {
+    tasks = [];
+    blockedByMap = {};
+
+    blockedBy(task) {
+        return this.blockedByMap.get(task.id);
+    }
+
+    addTask(task, blockedByTasks) {
+        this.tasks.push(task);
+        this.blockedByMap[task.id] = blockedByTasks;
+    }
+}
