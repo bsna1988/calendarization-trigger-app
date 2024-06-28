@@ -1,5 +1,6 @@
 // Necessary import for calling Jira REST APIs
 import api, { route } from "@forge/api";
+import TeamMember from "./domain";
 
 const buildOutput = () => ({
   headers: {
@@ -13,6 +14,21 @@ const getRandomObject = (arr) => {
   const randomIndex = Math.floor(Math.random() * arr.length);
   // Return the object at the random index
   return arr[randomIndex];
+}
+
+const getUser = async (accountId) => {
+  const response = await api.asApp().requestJira(route`/rest/api/2/user?accountId=${accountId}`, {
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  console.log(`Response: ${response.status} ${response.statusText}`);
+
+  const user = await response.json();
+  console.log(user);
+
+  return user;
 }
 
 
@@ -54,7 +70,7 @@ export const run = async (req) => {
     };
   }
 
-  // console.log('Correct token');
+  console.log('Correct token');
 
   // Calling the GET sprint API passing a parameter from the A4J action 
   // You can change the API depending on your use case
@@ -65,9 +81,13 @@ export const run = async (req) => {
 
   const usersResponsePromise = await api.asApp().requestJira(route`/rest/api/2/users/search`);
   const allUsers = await usersResponsePromise.json();
-  const activeUsers = allUsers.filter(user => user.active)
-    .filter(user => user.accountType === 'atlassian');
-  console.log(activeUsers);
+  const activeUsers = await Promise.all(allUsers.filter(user => user.active)
+    .filter(user => user.accountType === 'atlassian')
+    .map(async (user) => await getUser(user.accountId)));
+
+  const teamMembers = activeUsers.map(user => new TeamMember(user.accountId, user.timeZone));
+
+  console.log(teamMembers);
 
   issuesResponse.issues.forEach(issue => {
     assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);
