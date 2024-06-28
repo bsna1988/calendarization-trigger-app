@@ -1,6 +1,7 @@
 // Necessary import for calling Jira REST APIs
 import api, { route } from "@forge/api";
 import { TeamMember, Task, TaskSet, Team } from "./domain";
+import Scheduler from "./scheduler";
 
 const buildOutput = () => ({
   headers: {
@@ -124,6 +125,10 @@ export const run = async (req) => {
   //console.log(teamMembers);
   const team = new Team(teamMembers);
   console.log(team);
+
+  const scheduler = new Scheduler();
+  const schedule = scheduler.simulate(taskSet, team);
+  console.log(schedule);
 
   issuesResponse.issues.forEach(issue => {
     // assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);

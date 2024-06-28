@@ -47,15 +47,38 @@ export class Team {
 }
 
 export class TaskSet {
-    tasks = [];
-    blockedByMap = {};
-
     constructor(tasks, blockedByMap) {
         this.tasks = tasks;
         this.blockedByMap = blockedByMap;
     }
 
-    blockedBy(task) {
-        return this.blockedByMap.get(task.id);
+    blockedBy(taskId) {
+        const blockedBy = this.blockedByMap[taskId];
+        return blockedBy ? blockedBy : [];
+    }
+}
+
+export class Assignment {
+    constructor(teamMember, task, startTime, finishTime) {
+        this.teamMember = teamMember;
+        this.task = task;
+        this.startTime = startTime;
+        this.finishTime = finishTime;
+    }
+}
+
+export class Schedule {
+    assignments = [];
+
+    finishedTasksAt(time) {
+        return this.assignments
+            .filter(assignment => assignment.finishTime <= time)
+            .map(assignment => assignment.task)
+    }
+
+    assignedTasksAt(time) {
+        return this.assignments
+            .filter(assignment => assignment.startTime >= time)
+            .map(assignment => assignment.task)
     }
 }
