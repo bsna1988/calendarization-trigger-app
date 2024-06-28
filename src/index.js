@@ -92,15 +92,28 @@ export const run = async (req) => {
   const issuesResponse = await issuesResponsePromise.json();
   const issues = await Promise.all(issuesResponse.issues
     .map(async (issue) => await getIssue(issue.key)));
-
   //console.log(issues);
 
-  const tasks = issues.map(issue =>  new Task(issue.key, issue.fields.customfield_10016));
-  //console.log(tasks);
-  const taskSet = new TaskSet();
-  tasks.forEach(task => taskSet.addTask(task));
-  console.log(taskSet);
+  const blockedByMap = {};
+  issues.forEach(issue => {
+    issue.fields.issuelinks
+      .filter(issueLink => issueLink.type.inward === 'is blocked by' && issueLink.hasOwnProperty('outwardIssue'))
+      .forEach(issueLink => {
+        const inwardKey = issue.key;
+        const outwardKey = issueLink.outwardIssue.key;
+        if (!blockedByMap.hasOwnProperty(outwardKey)) {
+          blockedByMap[outwardKey] = [];
+        }
+        blockedByMap[outwardKey].push(inwardKey);
+      })
+  });
 
+  //console.log(blockedByMap);
+
+  const tasks = issues.map(issue => new Task(issue.key, issue.fields.customfield_10016));
+  //console.log(tasks);
+  const taskSet = new TaskSet(tasks, blockedByMap);
+  console.log(taskSet);
   const usersResponsePromise = await api.asApp().requestJira(route`/rest/api/2/users/search`);
   const allUsers = await usersResponsePromise.json();
   const activeUsers = await Promise.all(allUsers.filter(user => user.active)
@@ -113,7 +126,7 @@ export const run = async (req) => {
   console.log(team);
 
   issuesResponse.issues.forEach(issue => {
-    assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);
+    // assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);
   });
 
   const result = buildOutput();
