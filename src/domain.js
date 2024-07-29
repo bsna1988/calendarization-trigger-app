@@ -31,12 +31,41 @@
             }
         }
     }
+
+
+    whenCanStartTask(currentTime) {
+        for (let hour = currentTime; hour < TeamMember.DAYS_IN_TWO_SPRINTS * 24; hour++) {
+            if (this.workHours[hour]) {
+                return hour;
+            }
+        }
+        return -1;
+    }
+
+    whenCanFinishTask(currentTime, taskEstimateHours) {
+        let finishTime = currentTime;
+        let remainingHours = taskEstimateHours;
+        while (remainingHours > 0) {
+            if (this.workHours[finishTime++]) {
+                remainingHours--;
+            }
+        }
+        return finishTime;
+    }
+
+    toString() {
+        return `TeamMember: ${this.accountId}`;
+    }
 }
 
 export class Task {
     constructor(id, estimatedHours) {
         this.id = id;
         this.estimatedHours = estimatedHours;
+    }
+
+    toString() {
+        return `Task: ${this.id}`;
     }
 }
 
@@ -72,13 +101,26 @@ export class Schedule {
 
     finishedTasksAt(time) {
         return this.assignments
-            .filter(assignment => assignment.finishTime <= time)
-            .map(assignment => assignment.task)
+            .filter(assignment => assignment.finishTime < time)
+            .map(assignment => assignment.task);
+    }
+
+    assignmentsAt(time) {
+        return this.assignments
+            .filter(assignment => assignment.startTime <= time)
+            .filter(assignment => assignment.finishTime > time);
     }
 
     assignedTasksAt(time) {
-        return this.assignments
-            .filter(assignment => assignment.startTime >= time)
-            .map(assignment => assignment.task)
+        return this.assignmentsAt(time).map(assignment => assignment.task);
     }
+
+    assignedTeamMembersAt(time) {
+        return this.assignmentsAt(time).map(assignment => assignment.teamMember);
+    }
+
+    assign(teamMember, task, startTime, finishTime) {
+        this.assignments.push(new Assignment(teamMember, task, startTime, finishTime));
+    }
+
 }
