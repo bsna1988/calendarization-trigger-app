@@ -24,7 +24,7 @@
             for (let hourOfDayUTC = 0; hourOfDayUTC < 24; hourOfDayUTC++) {
                 currentTime.setUTCHours(hourOfDayUTC, 0, 0, 0);
                 let hourInTimeZone = formatter.format(currentTime);
-                this.workHours[hourOfDayUTC] = hourInTimeZone >= TeamMember.START_HOUR && hourInTimeZone < (TeamMember.START_HOUR + 4) ||
+                this.workHours[day * 24 + hourOfDayUTC] = hourInTimeZone >= TeamMember.START_HOUR && hourInTimeZone < (TeamMember.START_HOUR + 4) ||
                     hourInTimeZone >= (TeamMember.START_HOUR + 5) && hourInTimeZone < (TeamMember.START_HOUR + 9);
                 //console.log(`User: ${accountId} in ${timeZone} timeZone. 
                 //    At UTC hour ${hourOfDayUTC}, local hour ${hourInTimeZone}, working=${this.#workHours[hourOfDayUTC]}`);
@@ -54,7 +54,7 @@
     }
 
     toString() {
-        return `TeamMember: ${this.accountId}`;
+        return `TeamMember ${this.accountId}`;
     }
 }
 
@@ -65,7 +65,7 @@ export class Task {
     }
 
     toString() {
-        return `Task: ${this.id}`;
+        return `Task ${this.id}`;
     }
 }
 
@@ -101,7 +101,7 @@ export class Schedule {
 
     finishedTasksAt(time) {
         return this.assignments
-            .filter(assignment => assignment.finishTime < time)
+            .filter(assignment => assignment.finishTime <= time)
             .map(assignment => assignment.task);
     }
 
@@ -122,5 +122,6 @@ export class Schedule {
     assign(teamMember, task, startTime, finishTime) {
         this.assignments.push(new Assignment(teamMember, task, startTime, finishTime));
     }
+
 
 }

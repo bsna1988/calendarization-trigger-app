@@ -7,8 +7,9 @@ export default class Scheduler {
 
         console.log("Scheduling " + taskSet.tasks);
         while (!includesAll(schedule.finishedTasksAt(timeOffsetUTC), taskSet.tasks)) {
+            console.log(`------------- ${timeOffsetUTC} ---------------`)
             const nextTask = this.nextAvailableTask(taskSet, schedule, timeOffsetUTC);
-            console.log(`Next task ${nextTask} at ${timeOffsetUTC}`)
+            console.log(`Next task: ${nextTask}`)
             if (nextTask) {
                 let assignedTeamMebers = schedule.assignedTeamMembersAt(timeOffsetUTC);
                 console.log(`Assigned TeamMembers: ${assignedTeamMebers}`)
@@ -20,14 +21,14 @@ export default class Scheduler {
                 console.log(`Not Assgined TeamMembers: ${notAssginedTeamMembers}`)
                 if (notAssginedTeamMembers.length > 0) {
                     let assignee = notAssginedTeamMembers[0];
-                    console.log(`assignee ${assignee}`)
+                    console.log(`Assigned ${nextTask} to ${assignee} with start at ${assignee.whenCanStartTask(timeOffsetUTC)} , finish ${assignee.whenCanFinishTask(timeOffsetUTC, nextTask.estimatedHours)}`)
                     schedule.assign(assignee, nextTask, assignee.whenCanStartTask(timeOffsetUTC),
                         assignee.whenCanFinishTask(timeOffsetUTC, nextTask.estimatedHours));
                 } else {
                     timeOffsetUTC++;
                 }
             } else {
-                timeOffsetUTC++;ç
+                timeOffsetUTC++;
             }
         }
 
@@ -36,10 +37,12 @@ export default class Scheduler {
 
     nextAvailableTask(taskSet, schedule, time) {
         const assignedTasks = schedule.assignedTasksAt(time);
-        console.log(`Assigned Tasks ${assignedTasks}`);
+        console.log(`Assigned Tasks: ${assignedTasks}`);
         const finishedTasksIds = schedule.finishedTasksAt(time).map(task => task.id);
-        console.log(`Finsihed Tasks ${finishedTasksIds}`);
-        const availableTasks = taskSet.tasks.filter(task => !assignedTasks.includes(task))
+        console.log(`Finsihed Tasks: ${finishedTasksIds}`);
+        const availableTasks = taskSet.tasks
+            .filter(task => !finishedTasksIds.includes(task.id))
+            .filter(task => !assignedTasks.includes(task))
             .filter(task => {
                 const blockedByIds = taskSet.blockedBy(task.id);
                 console.log(`Checking Task ${task} Blocked By ${blockedByIds}`);
