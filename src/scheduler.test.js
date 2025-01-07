@@ -15,7 +15,7 @@ describe("Scheduler", () => {
 
         let teamMember1 = new TeamMember(1, 'Europe/Kyiv');
         let teamMember2 = new TeamMember(2, 'America/Los_Angeles');
-        let team = new Team([teamMember1])
+        let team = new Team([teamMember1, teamMember2])
         let schedule = scheduler.simulate(taskSet, team);
 
         let scheduleAsString = 'Schedule: ' + schedule.assignments

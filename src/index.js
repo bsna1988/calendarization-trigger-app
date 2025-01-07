@@ -10,12 +10,6 @@ const buildOutput = () => ({
   statusCode: 204,
   statusText: 'No Content'
 });
-const getRandomObject = (arr) => {
-  // Generate a random index
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  // Return the object at the random index
-  return arr[randomIndex];
-}
 
 const getUser = async (accountId) => {
   const response = await api.asApp().requestJira(route`/rest/api/2/user?accountId=${accountId}`, {
@@ -23,12 +17,7 @@ const getUser = async (accountId) => {
       'Accept': 'application/json'
     }
   });
-
-  //console.log(`Response: ${response.status} ${response.statusText}`);
-
   const user = await response.json();
-  //console.log(user);
-
   return user;
 }
 
@@ -38,63 +27,33 @@ const getIssue = async (issueIdOrKey) => {
       'Accept': 'application/json'
     }
   });
-
-  //console.log(`Response: ${response.status} ${response.statusText}`);
   const issue = await response.json();
-  //console.log(issue);
   return issue;
 }
 
-
-const assignIssueToUser = async (issueIdOrKey, userId) => {
-  var bodyData = `{
-    "accountId": "${userId}"
-  }`;
-
-  const response = await api.asApp().requestJira(route`/rest/api/2/issue/${issueIdOrKey}/assignee`, {
-    method: 'PUT',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: bodyData
-  });
-
-  //console.log(`Response: ${response.status} ${response.statusText}`);
-}
-
 export const run = async (req) => {
-  // This is the request from A4J
-  //console.log(req);
-
   // Parses the request body from A4J as it is a string when we got it
   const parsedBody = JSON.parse(req.body);
 
   // Gets the Authorization header
-  // Yes, the header keys are received in lower case
   const authToken = req.headers['authorization'];
 
-  // If you decided to add Authorization header in the A4J request
-  // This is a basic handling of that token
+  // Basic handling of that Authorization header 
   if (authToken != 'Bearer my-token') {
-    //console.log('Invalid token');
     return {
       statusCode: 401,
       statusText: 'Unauthorized'
     };
   }
 
-  //console.log('Correct token');
-
-  // Calling the GET sprint API passing a parameter from the A4J action 
-  // You can change the API depending on your use case
+  // Get Jira issues in sprint
   const issuesResponsePromise = await api.asApp()
     .requestJira(route`/rest/agile/1.0/sprint/${parsedBody.sprint_id}/issue`);
   const issuesResponse = await issuesResponsePromise.json();
   const issues = await Promise.all(issuesResponse.issues
     .map(async (issue) => await getIssue(issue.key)));
-  //console.log(issues);
 
+   // Get dependencies for each Jira issue 
   const blockedByMap = {};
   issues.forEach(issue => {
     issue.fields.issuelinks
@@ -109,31 +68,29 @@ export const run = async (req) => {
       })
   });
 
-  //console.log(blockedByMap);
-
+   // Form list of tasks with depdendencies
   const tasks = issues.map(issue => new Task(issue.key, issue.fields.customfield_10016));
-  //console.log(tasks);
   const taskSet = new TaskSet(tasks, blockedByMap);
-  console.log(taskSet);
+
+   // Get list of Jira users
   const usersResponsePromise = await api.asApp().requestJira(route`/rest/api/2/users/search`);
   const allUsers = await usersResponsePromise.json();
   const activeUsers = await Promise.all(allUsers.filter(user => user.active)
     .filter(user => user.accountType === 'atlassian')
     .map(async (user) => await getUser(user.accountId)));
 
+  // Form a team
   const teamMembers = activeUsers.map(user => new TeamMember(user.accountId, user.timeZone));
-  //console.log(teamMembers);
   const team = new Team(teamMembers);
-  console.log(team);
 
+  // Schedule tasks for team
   const scheduler = new Scheduler();
   const schedule = scheduler.simulate(taskSet, team);
-  console.log(schedule);
 
-  issuesResponse.issues.forEach(issue => {
-    // assignIssueToUser(issue.key, getRandomObject(activeUsers).accountId);
-  });
+  // Call Jira API to assign issues to users according to schedule
+  schedule.assignments.forEach(assignment => {
+    assignIssueToUser(assignment.task.id, assignment.teamMember.accountId);
+ });
 
-  const result = buildOutput();
-  return result;
+  return buildOutput();
 };
