@@ -94,3 +94,20 @@ export const run = async (req) => {
 
   return buildOutput();
 };
+
+const assignIssueToUser = async (issueIdOrKey, userId) => {
+  var bodyData = `{
+    "accountId": "${userId}"
+  }`;
+
+  const response = await api.asApp().requestJira(route`/rest/api/2/issue/${issueIdOrKey}/assignee`, {
+    method: 'PUT',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: bodyData
+  });
+
+  console.log(`Response: ${response.status} ${response.statusText}`);
+}
