@@ -22,7 +22,7 @@ const getUser = async (accountId) => {
 }
 
 const getIssue = async (issueIdOrKey) => {
-  const response = await api.asApp().requestJira(route`/rest/api/2/issue/${issueIdOrKey}`, {
+  const response = await api.asApp().requestJira(route`/rest/api/2/issue/${issueIdOrKey}?fields=status,issuelinks,customfield_10016`, {
     headers: {
       'Accept': 'application/json'
     }
@@ -33,6 +33,8 @@ const getIssue = async (issueIdOrKey) => {
 
 export const run = async (req) => {
   // Parses the request body from A4J as it is a string when we got it
+  console.log(`Body: ${req.body}`);
+
   const parsedBody = JSON.parse(req.body);
 
   // Gets the Authorization header
@@ -45,13 +47,22 @@ export const run = async (req) => {
       statusText: 'Unauthorized'
     };
   }
+  let sprintId = parsedBody.sprint_id;
+ 
+  if (parsedBody.issue.fields.customfield_10020 && parsedBody.issue.fields.customfield_10020.filter(sprint => sprint.state === 'active').length !== 0) {
+    sprintId = parsedBody.issue.fields.customfield_10020.filter(sprint => sprint.state === 'active')[0].id;
+  }
+  console.log(`Sprint ID: ${sprintId}`);
 
   // Get Jira issues in sprint
   const issuesResponsePromise = await api.asApp()
-    .requestJira(route`/rest/agile/1.0/sprint/${parsedBody.sprint_id}/issue`);
+    .requestJira(route`/rest/agile/1.0/sprint/${sprintId}/issue`);
   const issuesResponse = await issuesResponsePromise.json();
-  const issues = await Promise.all(issuesResponse.issues
-    .map(async (issue) => await getIssue(issue.key)));
+  const issues = (await Promise.all(issuesResponse.issues
+    .map(async (issue) => await getIssue(issue.key))))
+    .filter(issue => issue.fields.status.name !== 'Done');
+
+  console.log(`Issues: ${JSON.stringify(issues)}`);
 
    // Get dependencies for each Jira issue 
   const blockedByMap = {};
