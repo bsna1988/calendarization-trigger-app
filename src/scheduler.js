@@ -7,8 +7,11 @@ export default class Scheduler {
 
         while (!includesAll(schedule.finishedTasksAt(timeOffsetUTC), taskSet.tasks)) {
             const nextTask = this.nextAvailableTask(taskSet, schedule, timeOffsetUTC);
+            console.log(`Next task: ${nextTask ? nextTask.id : 'none'} at time ${timeOffsetUTC}`);
             if (nextTask) {
                 let assignedTeamMebers = schedule.assignedTeamMembersAt(timeOffsetUTC);
+                console.log(`Assigned team members: ${assignedTeamMebers.map(tm => tm.id)}`);
+                // Filter out team members who are already assigned to a task
                 let notAssignedTeamMembers = team.teamMembers
                     .filter(teamMember =>
                         !assignedTeamMebers.includes(teamMember))
@@ -16,12 +19,14 @@ export default class Scheduler {
                     .sort((tm1, tm2) =>
                         tm1.whenCanFinishTask(timeOffsetUTC, nextTask.estimatedHours) -
                         tm2.whenCanFinishTask(timeOffsetUTC, nextTask.estimatedHours));
+                console.log(`Not assigned team members: ${notAssignedTeamMembers.map(tm => tm.id)}`);
+                console.log(`Assigned team members: ${assignedTeamMebers.map(tm => tm.id)}`);
                 if (notAssignedTeamMembers.length > 0) {
                     let assignee = notAssignedTeamMembers[0];
                     schedule.assign(assignee, nextTask,
                         assignee.whenCanStartTask(timeOffsetUTC),
-                        assignee.whenCanFinishTask(timeOffsetUTC,
-                            nextTask.estimatedHours));
+                        assignee.whenCanFinishTask(timeOffsetUTC, nextTask.estimatedHours));
+                    console.log(`Assigned task ${nextTask.id} to ${assignee.accountId} at time ${timeOffsetUTC}, local time ${assignee.localHour[timeOffsetUTC]}`);
                 } else {
                     timeOffsetUTC++;
                 }

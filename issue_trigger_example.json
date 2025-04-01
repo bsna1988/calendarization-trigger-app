@@ -1,1 +1,674 @@
-{"issue":{"self":"https://bogoliy.atlassian.net/rest/api/2/10000","id":10000,"key":"CS-1","changelog":{"startAt":0,"maxResults":0,"total":0,"histories":null},"fields":{"statuscategorychangedate":"2025-03-15T00:14:21.349+0200","issuetype":{"namedValue":"Task","self":"https://bogoliy.atlassian.net/rest/api/2/issuetype/10002","id":10002,"description":"Tasks track small, distinct pieces of work.","iconUrl":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","untranslatedName":null,"subtask":false,"fields":{},"statuses":[],"hierarchyLevel":0},"components":[],"timespent":null,"timeoriginalestimate":null,"project":{"self":"https://bogoliy.atlassian.net/rest/api/2/project/10000","id":10000,"key":"CS","name":"Проєкт №1","description":null,"avatarUrls":{"48x48":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412","24x24":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=small","16x16":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=xsmall","32x32":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=medium"},"issuetypes":null,"projectCategory":null,"email":null,"lead":null,"components":null,"versions":null,"projectTypeKey":"software","simplified":true},"description":null,"fixVersions":[],"aggregatetimespent":null,"customfield_10035":null,"resolution":{"self":"https://bogoliy.atlassian.net/rest/api/2/resolution/10000","id":10000,"name":"Done","description":"Work has been completed on this issue.","namedValue":"Done"},"timetracking":{"originalEstimate":null,"remainingEstimate":null,"timeSpent":null,"originalEstimateSeconds":0,"remainingEstimateSeconds":0,"timeSpentSeconds":0},"security":null,"attachment":[{"self":"https://bogoliy.atlassian.net/rest/api/2/attachment/10000","id":10000,"filename":"image-20240904-110526.png","author":{"self":"https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402","name":null,"key":null,"accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":null,"avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":null,"accountType":"atlassian"},"created":1725447930805,"size":6751,"mimeType":"image/png","content":"https://bogoliy.atlassian.net/rest/api/2/attachment/content/10000"},{"self":"https://bogoliy.atlassian.net/rest/api/2/attachment/10001","id":10001,"filename":"image-20240904-110528.png","author":{"self":"https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402","name":null,"key":null,"accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":null,"avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":null,"accountType":"atlassian"},"created":1725447931635,"size":6751,"mimeType":"image/png","content":"https://bogoliy.atlassian.net/rest/api/2/attachment/content/10001"}],"aggregatetimeestimate":null,"resolutiondate":1741990461326,"workratio":-1,"summary":"Розробити дизайну сайту","watches":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/CS-1/watchers","watchCount":0,"isWatching":false},"issuerestriction":{"issuerestrictions":{},"shouldDisplay":true},"lastViewed":"2025-03-14T00:54:45.438+0200","creator":{"self":"https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402","name":null,"key":null,"accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":null,"avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":null,"accountType":"atlassian"},"subtasks":[],"created":1715694193201,"customfield_10020":[{"id":1,"name":"CS Sprint 1","state":"closed","boardId":1,"goal":"","startDate":"2024-05-14T13:44:06.907Z","endDate":"2024-05-28T13:44:03.000Z","completeDate":"2024-06-24T12:28:27.096Z"},{"id":2,"name":"CS Sprint 2","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T12:28:57.112Z","endDate":"2024-06-29T13:44:00.000Z","completeDate":"2024-06-24T12:40:46.697Z"},{"id":3,"name":"CS Sprint 3","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T12:40:54.559Z","endDate":"2024-06-29T13:56:50.000Z","completeDate":"2024-06-24T12:46:10.901Z"},{"id":4,"name":"CS Sprint 4","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T12:46:15.262Z","endDate":"2024-06-29T14:02:13.000Z","completeDate":"2024-06-24T13:02:53.908Z"},{"id":5,"name":"CS Sprint 5","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T13:02:57.958Z","endDate":"2024-06-29T14:18:56.000Z","completeDate":"2024-06-24T13:32:42.786Z"},{"id":6,"name":"CS Sprint 6","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T13:32:48.086Z","endDate":"2024-06-29T14:48:45.000Z","completeDate":"2024-06-24T13:34:46.442Z"},{"id":7,"name":"CS Sprint 7","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T13:34:50.297Z","endDate":"2024-06-29T14:50:48.000Z","completeDate":"2024-06-24T13:35:40.604Z"},{"id":8,"name":"CS Sprint 8","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T13:35:44.114Z","endDate":"2024-06-29T14:51:42.000Z","completeDate":"2024-06-24T13:36:06.939Z"},{"id":9,"name":"CS Sprint 9","state":"closed","boardId":1,"goal":"","startDate":"2024-06-24T13:36:11.728Z","endDate":"2024-06-29T14:52:10.000Z","completeDate":"2024-06-26T11:23:03.677Z"},{"id":10,"name":"CS Sprint 10","state":"closed","boardId":1,"goal":"","startDate":"2024-06-26T11:23:10.078Z","endDate":"2024-07-01T12:39:07.000Z","completeDate":"2024-06-26T11:25:13.619Z"},{"id":11,"name":"CS Sprint 11","state":"closed","boardId":1,"goal":"","startDate":"2024-06-26T11:25:18.016Z","endDate":"2024-07-01T12:41:16.000Z","completeDate":"2024-08-29T14:27:51.216Z"},{"id":12,"name":"Спринт 1","state":"closed","boardId":1,"goal":"","startDate":"2024-09-04T11:07:41.000Z","endDate":"2024-09-09T12:23:37.000Z","completeDate":"2025-01-08T09:45:16.152Z"},{"id":13,"name":"Спринт 2","state":"closed","boardId":1,"goal":"","startDate":"2025-01-08T09:45:33.182Z","endDate":"2025-01-13T11:01:29.000Z","completeDate":"2025-01-08T09:46:58.478Z"},{"id":14,"name":"Спринт 3","state":"closed","boardId":1,"goal":"","startDate":"2025-01-08T09:47:05.622Z","endDate":"2025-01-13T11:03:04.000Z","completeDate":"2025-01-08T09:47:45.291Z"},{"id":15,"name":"Спринт 4","state":"closed","boardId":1,"goal":"","startDate":"2025-01-08T09:50:40.939Z","endDate":"2025-01-13T11:06:39.000Z","completeDate":"2025-03-13T22:54:33.901Z"},{"id":16,"name":"Спринт 5","state":"active","boardId":1,"goal":"","startDate":"2025-03-13T22:55:12.857Z","endDate":"2025-03-19T00:11:10.000Z"}],"reporter":{"self":"https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402","name":null,"key":null,"accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":null,"avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":null,"accountType":"atlassian"},"customfield_10021":null,"aggregateprogress":{"progress":0,"total":0},"priority":{"self":"https://bogoliy.atlassian.net/rest/api/2/priority/3","id":3,"name":"Medium","iconUrl":"https://bogoliy.atlassian.net/images/icons/priorities/medium.svg","namedValue":"Medium"},"labels":[],"customfield_10016":4.0,"environment":null,"customfield_10019":"0|hzzzzz:","timeestimate":null,"aggregatetimeoriginalestimate":null,"versions":[],"duedate":null,"progress":{"progress":0,"total":0},"votes":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/CS-1/votes","votes":0,"hasVoted":false},"issuelinks":[{"id":10005,"type":{"id":10000,"name":"Blocks","inward":"is blocked by","outward":"blocks"},"outwardIssue":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/10001","id":10001,"key":"CS-2","changelog":{"startAt":0,"maxResults":0,"total":0,"histories":null},"fields":{"summary":"Зверстати сторінки сайту","status":{"self":"https://bogoliy.atlassian.net/rest/api/2/status/10000","description":"","iconUrl":"https://bogoliy.atlassian.net/","name":"To Do","untranslatedName":null,"id":10000,"statusCategory":{"self":"https://bogoliy.atlassian.net/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To Do"},"untranslatedNameValue":null},"priority":{"self":"https://bogoliy.atlassian.net/rest/api/2/priority/3","id":3,"name":"Medium","iconUrl":"https://bogoliy.atlassian.net/images/icons/priorities/medium.svg","namedValue":"Medium"},"issuetype":{"namedValue":"Task","self":"https://bogoliy.atlassian.net/rest/api/2/issuetype/10002","id":10002,"description":"A small, distinct piece of work.","iconUrl":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","untranslatedName":null,"subtask":false,"fields":{},"statuses":[],"hierarchyLevel":0}},"renderedFields":null},"inwardIssue":null,"issue":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/10001","id":10001,"key":"CS-2","changelog":{"startAt":0,"maxResults":0,"total":0,"histories":null},"fields":{"summary":"Зверстати сторінки сайту","status":{"self":"https://bogoliy.atlassian.net/rest/api/2/status/10000","description":"","iconUrl":"https://bogoliy.atlassian.net/","name":"To Do","untranslatedName":null,"id":10000,"statusCategory":{"self":"https://bogoliy.atlassian.net/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To Do"},"untranslatedNameValue":null},"priority":{"self":"https://bogoliy.atlassian.net/rest/api/2/priority/3","id":3,"name":"Medium","iconUrl":"https://bogoliy.atlassian.net/images/icons/priorities/medium.svg","namedValue":"Medium"},"issuetype":{"namedValue":"Task","self":"https://bogoliy.atlassian.net/rest/api/2/issuetype/10002","id":10002,"description":"A small, distinct piece of work.","iconUrl":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","untranslatedName":null,"subtask":false,"fields":{},"statuses":[],"hierarchyLevel":0}},"renderedFields":null},"inward":false},{"id":10000,"type":{"id":10000,"name":"Blocks","inward":"is blocked by","outward":"blocks"},"outwardIssue":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/10002","id":10002,"key":"CS-3","changelog":{"startAt":0,"maxResults":0,"total":0,"histories":null},"fields":{"summary":"Підготувати інфраструктуру","status":{"self":"https://bogoliy.atlassian.net/rest/api/2/status/10000","description":"","iconUrl":"https://bogoliy.atlassian.net/","name":"To Do","untranslatedName":null,"id":10000,"statusCategory":{"self":"https://bogoliy.atlassian.net/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To Do"},"untranslatedNameValue":null},"priority":{"self":"https://bogoliy.atlassian.net/rest/api/2/priority/3","id":3,"name":"Medium","iconUrl":"https://bogoliy.atlassian.net/images/icons/priorities/medium.svg","namedValue":"Medium"},"issuetype":{"namedValue":"Task","self":"https://bogoliy.atlassian.net/rest/api/2/issuetype/10002","id":10002,"description":"A small, distinct piece of work.","iconUrl":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","untranslatedName":null,"subtask":false,"fields":{},"statuses":[],"hierarchyLevel":0}},"renderedFields":null},"inwardIssue":null,"issue":{"self":"https://bogoliy.atlassian.net/rest/api/2/issue/10002","id":10002,"key":"CS-3","changelog":{"startAt":0,"maxResults":0,"total":0,"histories":null},"fields":{"summary":"Підготувати інфраструктуру","status":{"self":"https://bogoliy.atlassian.net/rest/api/2/status/10000","description":"","iconUrl":"https://bogoliy.atlassian.net/","name":"To Do","untranslatedName":null,"id":10000,"statusCategory":{"self":"https://bogoliy.atlassian.net/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To Do"},"untranslatedNameValue":null},"priority":{"self":"https://bogoliy.atlassian.net/rest/api/2/priority/3","id":3,"name":"Medium","iconUrl":"https://bogoliy.atlassian.net/images/icons/priorities/medium.svg","namedValue":"Medium"},"issuetype":{"namedValue":"Task","self":"https://bogoliy.atlassian.net/rest/api/2/issuetype/10002","id":10002,"description":"A small, distinct piece of work.","iconUrl":"https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","untranslatedName":null,"subtask":false,"fields":{},"statuses":[],"hierarchyLevel":0}},"renderedFields":null},"inward":false}],"comment":{"maxResults":0,"total":0,"startAt":0,"comments":[],"last":false},"assignee":{"self":"https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402","name":null,"key":null,"accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":null,"avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":null,"accountType":"atlassian"},"worklog":{"maxResults":20,"total":0,"startAt":0,"worklogs":[],"last":false},"updated":1741990461348,"status":{"self":"https://bogoliy.atlassian.net/rest/api/2/status/10002","description":"","iconUrl":"https://bogoliy.atlassian.net/","name":"Done","untranslatedName":null,"id":10002,"statusCategory":{"self":"https://bogoliy.atlassian.net/rest/api/2/statuscategory/3","id":3,"key":"done","colorName":"green","name":"Complete"},"untranslatedNameValue":null}},"renderedFields":null},"user":{"self":null,"name":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","key":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","accountId":"557058:47411d64-0b03-44ec-8922-b09c37d1a402","emailAddress":"bogoliy@gmail.com","avatarUrls":{"48x48":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128","24x24":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128","16x16":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128","32x32":"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128"},"displayName":"Bob","active":true,"timeZone":"America/Los_Angeles","groups":null,"locale":"uk","accountType":"atlassian"},"timestamp":1741990463619}
+{
+    "issue": {
+        "self": "https://bogoliy.atlassian.net/rest/api/2/10000",
+        "id": 10000,
+        "key": "CS-1",
+        "changelog": {
+            "startAt": 0,
+            "maxResults": 0,
+            "total": 0,
+            "histories": null
+        },
+        "fields": {
+            "statuscategorychangedate": "2025-03-15T00:14:21.349+0200",
+            "issuetype": {
+                "namedValue": "Task",
+                "self": "https://bogoliy.atlassian.net/rest/api/2/issuetype/10002",
+                "id": 10002,
+                "description": "Tasks track small, distinct pieces of work.",
+                "iconUrl": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                "name": "Task",
+                "untranslatedName": null,
+                "subtask": false,
+                "fields": {},
+                "statuses": [],
+                "hierarchyLevel": 0
+            },
+            "components": [],
+            "timespent": null,
+            "timeoriginalestimate": null,
+            "project": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/project/10000",
+                "id": 10000,
+                "key": "CS",
+                "name": "Проєкт №1",
+                "description": null,
+                "avatarUrls": {
+                    "48x48": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412",
+                    "24x24": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=small",
+                    "16x16": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=xsmall",
+                    "32x32": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10412?size=medium"
+                },
+                "issuetypes": null,
+                "projectCategory": null,
+                "email": null,
+                "lead": null,
+                "components": null,
+                "versions": null,
+                "projectTypeKey": "software",
+                "simplified": true
+            },
+            "description": null,
+            "fixVersions": [],
+            "aggregatetimespent": null,
+            "customfield_10035": null,
+            "resolution": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/resolution/10000",
+                "id": 10000,
+                "name": "Done",
+                "description": "Work has been completed on this issue.",
+                "namedValue": "Done"
+            },
+            "timetracking": {
+                "originalEstimate": null,
+                "remainingEstimate": null,
+                "timeSpent": null,
+                "originalEstimateSeconds": 0,
+                "remainingEstimateSeconds": 0,
+                "timeSpentSeconds": 0
+            },
+            "security": null,
+            "attachment": [
+                {
+                    "self": "https://bogoliy.atlassian.net/rest/api/2/attachment/10000",
+                    "id": 10000,
+                    "filename": "image-20240904-110526.png",
+                    "author": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402",
+                        "name": null,
+                        "key": null,
+                        "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+                        "emailAddress": null,
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"
+                        },
+                        "displayName": "Bob",
+                        "active": true,
+                        "timeZone": "America/Los_Angeles",
+                        "groups": null,
+                        "locale": null,
+                        "accountType": "atlassian"
+                    },
+                    "created": 1725447930805,
+                    "size": 6751,
+                    "mimeType": "image/png",
+                    "content": "https://bogoliy.atlassian.net/rest/api/2/attachment/content/10000"
+                },
+                {
+                    "self": "https://bogoliy.atlassian.net/rest/api/2/attachment/10001",
+                    "id": 10001,
+                    "filename": "image-20240904-110528.png",
+                    "author": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402",
+                        "name": null,
+                        "key": null,
+                        "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+                        "emailAddress": null,
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"
+                        },
+                        "displayName": "Bob",
+                        "active": true,
+                        "timeZone": "America/Los_Angeles",
+                        "groups": null,
+                        "locale": null,
+                        "accountType": "atlassian"
+                    },
+                    "created": 1725447931635,
+                    "size": 6751,
+                    "mimeType": "image/png",
+                    "content": "https://bogoliy.atlassian.net/rest/api/2/attachment/content/10001"
+                }
+            ],
+            "aggregatetimeestimate": null,
+            "resolutiondate": 1741990461326,
+            "workratio": -1,
+            "summary": "Розробити дизайну сайту",
+            "watches": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/issue/CS-1/watchers",
+                "watchCount": 0,
+                "isWatching": false
+            },
+            "issuerestriction": {
+                "issuerestrictions": {},
+                "shouldDisplay": true
+            },
+            "lastViewed": "2025-03-14T00:54:45.438+0200",
+            "creator": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402",
+                "name": null,
+                "key": null,
+                "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+                "emailAddress": null,
+                "avatarUrls": {
+                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48",
+                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24",
+                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16",
+                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"
+                },
+                "displayName": "Bob",
+                "active": true,
+                "timeZone": "America/Los_Angeles",
+                "groups": null,
+                "locale": null,
+                "accountType": "atlassian"
+            },
+            "subtasks": [],
+            "created": 1715694193201,
+            "customfield_10020": [
+                {
+                    "id": 1,
+                    "name": "CS Sprint 1",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-05-14T13:44:06.907Z",
+                    "endDate": "2024-05-28T13:44:03.000Z",
+                    "completeDate": "2024-06-24T12:28:27.096Z"
+                },
+                {
+                    "id": 2,
+                    "name": "CS Sprint 2",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T12:28:57.112Z",
+                    "endDate": "2024-06-29T13:44:00.000Z",
+                    "completeDate": "2024-06-24T12:40:46.697Z"
+                },
+                {
+                    "id": 3,
+                    "name": "CS Sprint 3",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T12:40:54.559Z",
+                    "endDate": "2024-06-29T13:56:50.000Z",
+                    "completeDate": "2024-06-24T12:46:10.901Z"
+                },
+                {
+                    "id": 4,
+                    "name": "CS Sprint 4",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T12:46:15.262Z",
+                    "endDate": "2024-06-29T14:02:13.000Z",
+                    "completeDate": "2024-06-24T13:02:53.908Z"
+                },
+                {
+                    "id": 5,
+                    "name": "CS Sprint 5",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T13:02:57.958Z",
+                    "endDate": "2024-06-29T14:18:56.000Z",
+                    "completeDate": "2024-06-24T13:32:42.786Z"
+                },
+                {
+                    "id": 6,
+                    "name": "CS Sprint 6",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T13:32:48.086Z",
+                    "endDate": "2024-06-29T14:48:45.000Z",
+                    "completeDate": "2024-06-24T13:34:46.442Z"
+                },
+                {
+                    "id": 7,
+                    "name": "CS Sprint 7",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T13:34:50.297Z",
+                    "endDate": "2024-06-29T14:50:48.000Z",
+                    "completeDate": "2024-06-24T13:35:40.604Z"
+                },
+                {
+                    "id": 8,
+                    "name": "CS Sprint 8",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T13:35:44.114Z",
+                    "endDate": "2024-06-29T14:51:42.000Z",
+                    "completeDate": "2024-06-24T13:36:06.939Z"
+                },
+                {
+                    "id": 9,
+                    "name": "CS Sprint 9",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-24T13:36:11.728Z",
+                    "endDate": "2024-06-29T14:52:10.000Z",
+                    "completeDate": "2024-06-26T11:23:03.677Z"
+                },
+                {
+                    "id": 10,
+                    "name": "CS Sprint 10",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-26T11:23:10.078Z",
+                    "endDate": "2024-07-01T12:39:07.000Z",
+                    "completeDate": "2024-06-26T11:25:13.619Z"
+                },
+                {
+                    "id": 11,
+                    "name": "CS Sprint 11",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-06-26T11:25:18.016Z",
+                    "endDate": "2024-07-01T12:41:16.000Z",
+                    "completeDate": "2024-08-29T14:27:51.216Z"
+                },
+                {
+                    "id": 12,
+                    "name": "Спринт 1",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2024-09-04T11:07:41.000Z",
+                    "endDate": "2024-09-09T12:23:37.000Z",
+                    "completeDate": "2025-01-08T09:45:16.152Z"
+                },
+                {
+                    "id": 13,
+                    "name": "Спринт 2",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2025-01-08T09:45:33.182Z",
+                    "endDate": "2025-01-13T11:01:29.000Z",
+                    "completeDate": "2025-01-08T09:46:58.478Z"
+                },
+                {
+                    "id": 14,
+                    "name": "Спринт 3",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2025-01-08T09:47:05.622Z",
+                    "endDate": "2025-01-13T11:03:04.000Z",
+                    "completeDate": "2025-01-08T09:47:45.291Z"
+                },
+                {
+                    "id": 15,
+                    "name": "Спринт 4",
+                    "state": "closed",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2025-01-08T09:50:40.939Z",
+                    "endDate": "2025-01-13T11:06:39.000Z",
+                    "completeDate": "2025-03-13T22:54:33.901Z"
+                },
+                {
+                    "id": 16,
+                    "name": "Спринт 5",
+                    "state": "active",
+                    "boardId": 1,
+                    "goal": "",
+                    "startDate": "2025-03-13T22:55:12.857Z",
+                    "endDate": "2025-03-19T00:11:10.000Z"
+                }
+            ],
+            "reporter": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402",
+                "name": null,
+                "key": null,
+                "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+                "emailAddress": null,
+                "avatarUrls": {
+                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48",
+                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24",
+                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16",
+                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"
+                },
+                "displayName": "Bob",
+                "active": true,
+                "timeZone": "America/Los_Angeles",
+                "groups": null,
+                "locale": null,
+                "accountType": "atlassian"
+            },
+            "customfield_10021": null,
+            "aggregateprogress": {
+                "progress": 0,
+                "total": 0
+            },
+            "priority": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/priority/3",
+                "id": 3,
+                "name": "Medium",
+                "iconUrl": "https://bogoliy.atlassian.net/images/icons/priorities/medium.svg",
+                "namedValue": "Medium"
+            },
+            "labels": [],
+            "customfield_10016": 4.0,
+            "environment": null,
+            "customfield_10019": "0|hzzzzz:",
+            "timeestimate": null,
+            "aggregatetimeoriginalestimate": null,
+            "versions": [],
+            "duedate": null,
+            "progress": {
+                "progress": 0,
+                "total": 0
+            },
+            "votes": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/issue/CS-1/votes",
+                "votes": 0,
+                "hasVoted": false
+            },
+            "issuelinks": [
+                {
+                    "id": 10005,
+                    "type": {
+                        "id": 10000,
+                        "name": "Blocks",
+                        "inward": "is blocked by",
+                        "outward": "blocks"
+                    },
+                    "outwardIssue": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/issue/10001",
+                        "id": 10001,
+                        "key": "CS-2",
+                        "changelog": {
+                            "startAt": 0,
+                            "maxResults": 0,
+                            "total": 0,
+                            "histories": null
+                        },
+                        "fields": {
+                            "summary": "Зверстати сторінки сайту",
+                            "status": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/status/10000",
+                                "description": "",
+                                "iconUrl": "https://bogoliy.atlassian.net/",
+                                "name": "To Do",
+                                "untranslatedName": null,
+                                "id": 10000,
+                                "statusCategory": {
+                                    "self": "https://bogoliy.atlassian.net/rest/api/2/statuscategory/2",
+                                    "id": 2,
+                                    "key": "new",
+                                    "colorName": "blue-gray",
+                                    "name": "To Do"
+                                },
+                                "untranslatedNameValue": null
+                            },
+                            "priority": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/priority/3",
+                                "id": 3,
+                                "name": "Medium",
+                                "iconUrl": "https://bogoliy.atlassian.net/images/icons/priorities/medium.svg",
+                                "namedValue": "Medium"
+                            },
+                            "issuetype": {
+                                "namedValue": "Task",
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/issuetype/10002",
+                                "id": 10002,
+                                "description": "A small, distinct piece of work.",
+                                "iconUrl": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                                "name": "Task",
+                                "untranslatedName": null,
+                                "subtask": false,
+                                "fields": {},
+                                "statuses": [],
+                                "hierarchyLevel": 0
+                            }
+                        },
+                        "renderedFields": null
+                    },
+                    "inwardIssue": null,
+                    "issue": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/issue/10001",
+                        "id": 10001,
+                        "key": "CS-2",
+                        "changelog": {
+                            "startAt": 0,
+                            "maxResults": 0,
+                            "total": 0,
+                            "histories": null
+                        },
+                        "fields": {
+                            "summary": "Зверстати сторінки сайту",
+                            "status": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/status/10000",
+                                "description": "",
+                                "iconUrl": "https://bogoliy.atlassian.net/",
+                                "name": "To Do",
+                                "untranslatedName": null,
+                                "id": 10000,
+                                "statusCategory": {
+                                    "self": "https://bogoliy.atlassian.net/rest/api/2/statuscategory/2",
+                                    "id": 2,
+                                    "key": "new",
+                                    "colorName": "blue-gray",
+                                    "name": "To Do"
+                                },
+                                "untranslatedNameValue": null
+                            },
+                            "priority": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/priority/3",
+                                "id": 3,
+                                "name": "Medium",
+                                "iconUrl": "https://bogoliy.atlassian.net/images/icons/priorities/medium.svg",
+                                "namedValue": "Medium"
+                            },
+                            "issuetype": {
+                                "namedValue": "Task",
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/issuetype/10002",
+                                "id": 10002,
+                                "description": "A small, distinct piece of work.",
+                                "iconUrl": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                                "name": "Task",
+                                "untranslatedName": null,
+                                "subtask": false,
+                                "fields": {},
+                                "statuses": [],
+                                "hierarchyLevel": 0
+                            }
+                        },
+                        "renderedFields": null
+                    },
+                    "inward": false
+                },
+                {
+                    "id": 10000,
+                    "type": {
+                        "id": 10000,
+                        "name": "Blocks",
+                        "inward": "is blocked by",
+                        "outward": "blocks"
+                    },
+                    "outwardIssue": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/issue/10002",
+                        "id": 10002,
+                        "key": "CS-3",
+                        "changelog": {
+                            "startAt": 0,
+                            "maxResults": 0,
+                            "total": 0,
+                            "histories": null
+                        },
+                        "fields": {
+                            "summary": "Підготувати інфраструктуру",
+                            "status": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/status/10000",
+                                "description": "",
+                                "iconUrl": "https://bogoliy.atlassian.net/",
+                                "name": "To Do",
+                                "untranslatedName": null,
+                                "id": 10000,
+                                "statusCategory": {
+                                    "self": "https://bogoliy.atlassian.net/rest/api/2/statuscategory/2",
+                                    "id": 2,
+                                    "key": "new",
+                                    "colorName": "blue-gray",
+                                    "name": "To Do"
+                                },
+                                "untranslatedNameValue": null
+                            },
+                            "priority": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/priority/3",
+                                "id": 3,
+                                "name": "Medium",
+                                "iconUrl": "https://bogoliy.atlassian.net/images/icons/priorities/medium.svg",
+                                "namedValue": "Medium"
+                            },
+                            "issuetype": {
+                                "namedValue": "Task",
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/issuetype/10002",
+                                "id": 10002,
+                                "description": "A small, distinct piece of work.",
+                                "iconUrl": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                                "name": "Task",
+                                "untranslatedName": null,
+                                "subtask": false,
+                                "fields": {},
+                                "statuses": [],
+                                "hierarchyLevel": 0
+                            }
+                        },
+                        "renderedFields": null
+                    },
+                    "inwardIssue": null,
+                    "issue": {
+                        "self": "https://bogoliy.atlassian.net/rest/api/2/issue/10002",
+                        "id": 10002,
+                        "key": "CS-3",
+                        "changelog": {
+                            "startAt": 0,
+                            "maxResults": 0,
+                            "total": 0,
+                            "histories": null
+                        },
+                        "fields": {
+                            "summary": "Підготувати інфраструктуру",
+                            "status": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/status/10000",
+                                "description": "",
+                                "iconUrl": "https://bogoliy.atlassian.net/",
+                                "name": "To Do",
+                                "untranslatedName": null,
+                                "id": 10000,
+                                "statusCategory": {
+                                    "self": "https://bogoliy.atlassian.net/rest/api/2/statuscategory/2",
+                                    "id": 2,
+                                    "key": "new",
+                                    "colorName": "blue-gray",
+                                    "name": "To Do"
+                                },
+                                "untranslatedNameValue": null
+                            },
+                            "priority": {
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/priority/3",
+                                "id": 3,
+                                "name": "Medium",
+                                "iconUrl": "https://bogoliy.atlassian.net/images/icons/priorities/medium.svg",
+                                "namedValue": "Medium"
+                            },
+                            "issuetype": {
+                                "namedValue": "Task",
+                                "self": "https://bogoliy.atlassian.net/rest/api/2/issuetype/10002",
+                                "id": 10002,
+                                "description": "A small, distinct piece of work.",
+                                "iconUrl": "https://bogoliy.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                                "name": "Task",
+                                "untranslatedName": null,
+                                "subtask": false,
+                                "fields": {},
+                                "statuses": [],
+                                "hierarchyLevel": 0
+                            }
+                        },
+                        "renderedFields": null
+                    },
+                    "inward": false
+                }
+            ],
+            "comment": {
+                "maxResults": 0,
+                "total": 0,
+                "startAt": 0,
+                "comments": [],
+                "last": false
+            },
+            "assignee": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/user?accountId=557058%3A47411d64-0b03-44ec-8922-b09c37d1a402",
+                "name": null,
+                "key": null,
+                "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+                "emailAddress": null,
+                "avatarUrls": {
+                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/48",
+                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/24",
+                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/16",
+                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/32"
+                },
+                "displayName": "Bob",
+                "active": true,
+                "timeZone": "America/Los_Angeles",
+                "groups": null,
+                "locale": null,
+                "accountType": "atlassian"
+            },
+            "worklog": {
+                "maxResults": 20,
+                "total": 0,
+                "startAt": 0,
+                "worklogs": [],
+                "last": false
+            },
+            "updated": 1741990461348,
+            "status": {
+                "self": "https://bogoliy.atlassian.net/rest/api/2/status/10002",
+                "description": "",
+                "iconUrl": "https://bogoliy.atlassian.net/",
+                "name": "Done",
+                "untranslatedName": null,
+                "id": 10002,
+                "statusCategory": {
+                    "self": "https://bogoliy.atlassian.net/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
+                },
+                "untranslatedNameValue": null
+            }
+        },
+        "renderedFields": null
+    },
+    "user": {
+        "self": null,
+        "name": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+        "key": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+        "accountId": "557058:47411d64-0b03-44ec-8922-b09c37d1a402",
+        "emailAddress": "bogoliy@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:47411d64-0b03-44ec-8922-b09c37d1a402/6184ae70-f77c-4af8-943b-cecd92df508c/128"
+        },
+        "displayName": "Bob",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "groups": null,
+        "locale": "uk",
+        "accountType": "atlassian"
+    },
+    "timestamp": 1741990463619
+}

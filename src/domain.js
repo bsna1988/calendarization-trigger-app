@@ -1,5 +1,6 @@
 ﻿export class TeamMember {
     workHours = []; // UTC
+    localHour = []; // UTC
     static HOURS_IN_DAY = 24;
     static DAYS_IN_TWO_SPRINTS = 20;
     static START_HOUR = 9;
@@ -11,23 +12,28 @@
     }
 
     initWorkHours() {
+        console.log(`AccountId: ${this.accountId}, TimeZone: ${this.timeZone}`);
+        // Initialize work hours for two sprints (20 days)
         let options = {
             timeZone: this.timeZone,
             hour: '2-digit',
             hour12: false
         };
         let formatter = new Intl.DateTimeFormat([], options);
+        let currentTime = new Date();
         for (let day = 0; day < TeamMember.DAYS_IN_TWO_SPRINTS; day++) {
-            let currentTime = new Date();
             currentTime.setUTCDate(currentTime.getUTCDate() + day);
             for (let hourOfDayUTC = 0; hourOfDayUTC < TeamMember.HOURS_IN_DAY; hourOfDayUTC++) {
                 currentTime.setUTCHours(hourOfDayUTC, 0, 0, 0);
                 let hourInTimeZone = formatter.format(currentTime);
+                console.log(`AccountId: ${this.accountId}, TimeZone: ${this.timeZone}, UTC: ${currentTime.toUTCString()}, Local: ${hourInTimeZone}`);
+                // Check if the hour is in the range of 9-13 or 14-18
                 this.workHours[day * TeamMember.HOURS_IN_DAY + hourOfDayUTC] =
                     hourInTimeZone >= TeamMember.START_HOUR &&
                     hourInTimeZone < (TeamMember.START_HOUR + 4) ||
                     hourInTimeZone >= (TeamMember.START_HOUR + 5) &&
                     hourInTimeZone < (TeamMember.START_HOUR + 9);
+                this.localHour[day * TeamMember.HOURS_IN_DAY + hourOfDayUTC] = hourInTimeZone;
             }
         }
     }

@@ -49,7 +49,7 @@ export const run = async (req) => {
   }
   let sprintId = parsedBody.sprint_id;
  
-  if (parsedBody.issue.fields.customfield_10020 && parsedBody.issue.fields.customfield_10020.filter(sprint => sprint.state === 'active').length !== 0) {
+  if (parsedBody.issue && parsedBody.issue.fields.customfield_10020 && parsedBody.issue.fields.customfield_10020.filter(sprint => sprint.state === 'active').length !== 0) {
     sprintId = parsedBody.issue.fields.customfield_10020.filter(sprint => sprint.state === 'active')[0].id;
   }
   console.log(`Sprint ID: ${sprintId}`);
